@@ -30,11 +30,357 @@ header {
     flex: 0 0 11%;
     margin-left: 30px;
     cursor: pointer;
+    color: #ffffff;
   }
   img {
     padding-left: 30px;
   }
 }
+
+.sliderSection {
+  .sliderContents {
+    .heading {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 21px;
+      color: #524f62;
+      padding-left: 45px;
+      margin-top: 170px;
+    }
+    .subHeading {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 60px;
+      color: #524f62;
+      padding-left: 45px;
+    }
+    .lowerSubHeading {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      color: #524f62;
+      opacity: 0.7;
+      padding-left: 45px;
+    }
+    .gettingStarted {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21.6121px;
+      line-height: 25px;
+      /* identical to box height */
+
+      text-transform: lowercase;
+
+      color: #ffffff;
+
+      text-align: center;
+      background: #8386e7;
+      border-radius: 100px;
+      padding: 9px 30px;
+      flex: 0 0 11%;
+      margin-left: 50px;
+      cursor: pointer;
+      color: #ffffff;
+      width: 180px;
+      margin-top: 35px;
+    }
+    .mapImage {
+      width: 99%;
+      padding-top: 60px;
+    }
+    .employeeImage{
+      width: 83%;
+      padding-top: 60px;
+    }
+    .allManImageSection {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      color: #ffffff;
+      position: relative;
+      .first {
+        .man {
+          position: absolute;
+          top: 275px;
+          right: 60px;
+        }
+        .think {
+          position: absolute;
+          top: 230px;
+          right: 95px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          width: 70px;
+          position: absolute;
+          top: 245px;
+          right: 100px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 275px;
+          right: 100px;
+        }
+      }
+
+      .second {
+        .man {
+          position: absolute;
+          top: 490px;
+          right: 15px;
+        }
+        .think {
+          position: absolute;
+          top: 435px;
+          right: 50px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 448px;
+          right: 85px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 480px;
+          right: 60px;
+        }
+      }
+
+      .third {
+        .man {
+          position: absolute;
+          top: 330px;
+          right: 145px;
+        }
+        .think {
+          position: absolute;
+          top: 300px;
+          right: 200px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 315px;
+          right: 220px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 345px;
+          right: 200px;
+        }
+      }
+
+      .fourth {
+        .man {
+          position: absolute;
+          top: 155px;
+          right: 200px;
+        }
+        .think {
+          position: absolute;
+          top: 130px;
+          right: 245px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 145px;
+          right: 270px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 175px;
+          right: 250px;
+        }
+      }
+
+      .fifth {
+        .man {
+          position: absolute;
+          top: 265px;
+          right: 320px;
+        }
+        .think {
+          position: absolute;
+          top: 240px;
+          right: 370px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 255px;
+          right: 395px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 280px;
+          right: 370px;
+        }
+      }
+
+      .sixth {
+        .man {
+          position: absolute;
+          top: 400px;
+          right: 270px;
+        }
+        .think {
+          position: absolute;
+          top: 370px;
+          right: 330px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 385px;
+          right: 350px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 415px;
+          right: 330px;
+        }
+      }
+
+      .seventh {
+        .man {
+          position: absolute;
+          top: 455px;
+          right: 460px;
+        }
+        .think {
+          position: absolute;
+          top: 425px;
+          right: 510px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 440px;
+          right: 530px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 470px;
+          right: 515px;
+        }
+      }
+
+      .eighth {
+        .man {
+          position: absolute;
+          top: 290px;
+          right: 555px;
+        }
+        .think {
+          position: absolute;
+          top: 260px;
+          right: 615px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 275px;
+          right: 635px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 305px;
+          right: 620px;
+        }
+      }
+
+      .ninth {
+        .man {
+          position: absolute;
+          top: 210px;
+          right: 735px;
+        }
+        .think {
+          position: absolute;
+          top: 175px;
+          right: 615px;
+          overflow: hidden;
+        }
+        .thinkContent {
+          position: absolute;
+          top: 190px;
+          right: 635px;
+          color: white;
+          .rightBorder {
+            position: absolute;
+            top: -2px;
+            animation: blinker2 0.5s cubic-bezier(1, 0, 0, 1) infinite alternate;
+          }
+        }
+        .thinkPin {
+          position: absolute;
+          top: 215px;
+          right: 695px;
+        }
+      }
+    }
+  }
+}
+
 .whatWeOfferSection {
   padding-top: 100px;
   margin-bottom: 160px;
@@ -819,5 +1165,11 @@ header {
   }
   100% {
     transform: translateX(0px);
+  }
+}
+
+@keyframes blinker2 {
+  to {
+    opacity: 0;
   }
 }
