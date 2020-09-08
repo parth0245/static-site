@@ -11,7 +11,7 @@ header {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    text-transform: lowercase;
+    // text-transform: lowercase;
     color: #524f62;
     text-align: right;
     padding-top: 9px;
@@ -76,7 +76,7 @@ header {
       line-height: 25px;
       /* identical to box height */
 
-      text-transform: lowercase;
+      // text-transform: lowercase;
 
       color: #ffffff;
 
@@ -91,11 +91,17 @@ header {
       width: 180px;
       margin-top: 35px;
     }
+    .laptopImage {
+      position: relative;
+      right: 325px;
+      top: 70px;
+      height: 92%;
+    }
     .mapImage {
       width: 99%;
       padding-top: 60px;
     }
-    .employeeImage{
+    .employeeImage {
       width: 83%;
       padding-top: 60px;
     }
@@ -103,8 +109,8 @@ header {
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
-      line-height: 23px;
+      font-size: 16px;
+      line-height: 20px;
       color: #ffffff;
       position: relative;
       .first {
@@ -452,7 +458,7 @@ header {
       z-index: 9;
       margin-top: 160px;
       left: 150px;
-      animation: shake 3s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image2 {
@@ -460,7 +466,7 @@ header {
       z-index: 9;
       margin-top: 160px;
       left: 185px;
-      animation: bottomTop 2s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image3 {
@@ -468,7 +474,7 @@ header {
       z-index: 9;
       margin-top: 160px;
       left: 220px;
-      animation: shake 3s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image4 {
@@ -476,7 +482,7 @@ header {
       z-index: 9;
       margin-top: 160px;
       left: 255px;
-      animation: bottomTop 2s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image5 {
@@ -484,7 +490,7 @@ header {
       z-index: 9;
       margin-top: 350px;
       left: -50px;
-      animation: bottomTop 2s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image6 {
@@ -492,7 +498,7 @@ header {
       z-index: 9;
       margin-top: 350px;
       left: -15px;
-      animation: shake 3s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image7 {
@@ -500,7 +506,7 @@ header {
       z-index: 9;
       margin-top: 350px;
       left: 20px;
-      animation: bottomTop 2s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
     .image8 {
@@ -508,7 +514,7 @@ header {
       z-index: 9;
       margin-top: 350px;
       left: 55px;
-      animation: shake 3s;
+      animation: coin-rotate 3s;
       animation-iteration-count: infinite;
     }
   }
@@ -593,7 +599,19 @@ header {
     position: absolute;
     margin-top: 110px;
     left: 0px;
+    animation: companiesLeftImage 2s;
+    animation-iteration-count: infinite;
   }
+
+  // .content-first{
+  //   img {
+  //     cursor: pointer;
+  //     transition: transform 2s ease-in-out;
+  //     &:hover{
+  //       transform: rotateY(360deg);
+  //     }
+  //   }
+  // }
 }
 
 .translationServiceSection {
@@ -763,6 +781,12 @@ header {
     color: #524f62;
     margin-top: 13px;
     margin-bottom: 86px;
+
+    // &.ml12{
+    //   .letters{
+    //     display: inline-block;
+    //   }
+    // }
   }
   .content-first {
     .head {
@@ -887,6 +911,7 @@ header {
       font-size: 18px;
       line-height: 26px;
       color: #8386e7;
+      margin-bottom: 70px;
     }
     .col-lg-3 {
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08) !important;
@@ -898,7 +923,6 @@ header {
       max-width: 2.333333% !important;
     }
     .active {
-      // border: 1px solid #8386e7;
       padding-top: 15px;
       padding-bottom: 27px;
       .head {
@@ -1168,8 +1192,88 @@ header {
   }
 }
 
+@keyframes companiesLeftImage {
+  0% {
+    transform: translateY(0px);
+  }
+  5% {
+    transform: translateY(-20px);
+  }
+  10% {
+    transform: translateY(-40px);
+  }
+  15% {
+    transform: translateY(-60px);
+  }
+  20% {
+    transform: translateY(-80px);
+  }
+  25% {
+    transform: translateY(-100px);
+  }
+  30% {
+    transform: translateY(-120px);
+  }
+  35% {
+    transform: translateY(-140px);
+  }
+  40% {
+    transform: translateY(-160px);
+  }
+  45% {
+    transform: translateY(-180px);
+  }
+  50% {
+    transform: translateY(-200px);
+  }
+  55% {
+    transform: translateY(-180px);
+  }
+  60% {
+    transform: translateY(-160px);
+  }
+  65% {
+    transform: translateY(-140px);
+  }
+  70% {
+    transform: translateY(-120px);
+  }
+  75% {
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(-80px);
+  }
+  85% {
+    transform: translateY(-60px);
+  }
+  90% {
+    transform: translateY(-40px);
+  }
+  95% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
 @keyframes blinker2 {
   to {
     opacity: 0;
   }
 }
+
+@keyframes coin-rotate {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+

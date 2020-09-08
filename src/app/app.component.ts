@@ -1,11 +1,11 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-
+declare var anime: any;       
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'sugat-app';
 
   slideConfig = {
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     prevArrow: false,
     nextArrow: false,
     speed: 500,
-    autoplay: true
+    autoplay: false
   };
 
   manOne = {
@@ -81,6 +81,35 @@ export class AppComponent implements OnInit {
     speedFront: 450,
     speedBack: 350
   };
+
+  ngAfterViewInit(): void {
+    // Wrap every letter in a span
+    // var textWrapper = document.querySelector('.ml12');
+    // textWrapper.innerHTML = textWrapper.textContent.replace(
+    //   /\S/g,
+    //   "<span class='letter'>$&</span>"
+    // );
+
+    // anime
+    //   .timeline({ loop: true })
+    //   .add({
+    //     targets: '.ml12 .letter',
+    //     translateX: [40, 0],
+    //     translateZ: 0,
+    //     opacity: [0, 1],
+    //     easing: 'easeOutExpo',
+    //     duration: 1200,
+    //     delay: (el, i) => 500 + 30 * i
+    //   })
+    //   .add({
+    //     targets: '.ml12 .letter',
+    //     translateX: [0, -30],
+    //     opacity: [1, 0],
+    //     easing: 'easeInExpo',
+    //     duration: 1100,
+    //     delay: (el, i) => 100 + 30 * i
+    //   });
+  }
 
   ngOnInit() {
     setTimeout(() => {
