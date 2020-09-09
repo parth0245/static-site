@@ -1,11 +1,11 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-declare var anime: any;       
+import { Component, OnInit } from '@angular/core';
+declare var anime: any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit {
   title = 'sugat-app';
 
   slideConfig = {
@@ -82,36 +82,53 @@ export class AppComponent implements OnInit, AfterViewInit {
     speedBack: 350
   };
 
-  ngAfterViewInit(): void {
-    // Wrap every letter in a span
-    // var textWrapper = document.querySelector('.ml12');
-    // textWrapper.innerHTML = textWrapper.textContent.replace(
-    //   /\S/g,
-    //   "<span class='letter'>$&</span>"
-    // );
+  slideOneWidth = 10;
+  slideTwoWidth = 40;
 
-    // anime
-    //   .timeline({ loop: true })
-    //   .add({
-    //     targets: '.ml12 .letter',
-    //     translateX: [40, 0],
-    //     translateZ: 0,
-    //     opacity: [0, 1],
-    //     easing: 'easeOutExpo',
-    //     duration: 1200,
-    //     delay: (el, i) => 500 + 30 * i
-    //   })
-    //   .add({
-    //     targets: '.ml12 .letter',
-    //     translateX: [0, -30],
-    //     opacity: [1, 0],
-    //     easing: 'easeInExpo',
-    //     duration: 1100,
-    //     delay: (el, i) => 100 + 30 * i
-    //   });
+  IncreaseIntervalForOne() {
+    let intervalOne = setInterval(() => {
+      this.slideOneWidth = this.slideOneWidth + 0.5;
+      if (this.slideOneWidth == 93) {
+        clearInterval(intervalOne);
+        this.DecreaseIntervalForOne();
+      }
+    }, 50);
+  }
+
+  DecreaseIntervalForOne() {
+    let intervalOneD = setInterval(() => {
+      this.slideOneWidth = this.slideOneWidth - 0.5;
+      if (this.slideOneWidth == 0) {
+        clearInterval(intervalOneD);
+        this.IncreaseIntervalForOne();
+      }
+    }, 50);
+  }
+
+  IncreaseIntervalForTwo() {
+    let intervalTwo = setInterval(() => {
+      this.slideTwoWidth = this.slideTwoWidth + 0.5;
+      if (this.slideTwoWidth == 93) {
+        clearInterval(intervalTwo);
+        this.DecreaseIntervalForTwo();
+      }
+    }, 50);
+  }
+
+  DecreaseIntervalForTwo() {
+    let intervalOneD = setInterval(() => {
+      this.slideTwoWidth = this.slideTwoWidth - 0.5;
+      if (this.slideTwoWidth == 10) {
+        clearInterval(intervalOneD);
+        this.IncreaseIntervalForTwo();
+      }
+    }, 50);
   }
 
   ngOnInit() {
+    this.IncreaseIntervalForOne();
+    this.IncreaseIntervalForTwo();
+
     setTimeout(() => {
       this.typingCallbackForManOne(this, 'manOne');
     }, 300);
