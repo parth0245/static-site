@@ -1,5 +1,5 @@
 header {
-  background: #eef2f8;
+  // background: #eef2f8;
   &.row {
     margin-right: 0px !important;
     margin-left: 0px !important;
@@ -74,12 +74,7 @@ header {
       font-weight: bold;
       font-size: 21.6121px;
       line-height: 25px;
-      /* identical to box height */
-
-      // text-transform: lowercase;
-
       color: #ffffff;
-
       text-align: center;
       background: #8386e7;
       border-radius: 100px;
@@ -998,6 +993,7 @@ header {
   padding-top: 50px;
   .leftSection {
     border-right: 1px solid #eef2f8;
+    padding-left: 80px;
     .mapClass {
       margin-top: 29px;
     }
@@ -1060,6 +1056,21 @@ header {
           border: 2px solid #e0e4ed;
         }
       }
+    }
+    .submit {
+      color: #ffffff;
+      background: #8386e7;
+      border-radius: 120.067px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21.6121px;
+      line-height: 25px;
+      text-align: center;
+      padding: 11px 55px;
+      width: 180px;
+      margin: 40px 150px;
+      cursor: pointer;
     }
   }
   .emailContact {
@@ -1258,7 +1269,6 @@ header {
   }
 }
 
-
 @keyframes blinker2 {
   to {
     opacity: 0;
@@ -1276,4 +1286,3 @@ header {
     transform: rotateY(0deg);
   }
 }
-
