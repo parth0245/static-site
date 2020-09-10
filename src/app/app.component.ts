@@ -17,6 +17,12 @@ export class AppComponent implements OnInit {
     nextArrow: false,
     speed: 500,
     autoplay: false
+    // responsive: [
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {}
+    //   }
+    // ]
   };
 
   manOne = {

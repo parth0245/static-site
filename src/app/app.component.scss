@@ -24,7 +24,7 @@ header {
     text-align: center;
     background: #8386e7;
     border-radius: 100px;
-    padding: 9px 30px;
+    padding: 9px 25px;
     flex: 0 0 11%;
     margin-left: 30px;
     cursor: pointer;
@@ -193,6 +193,253 @@ header {
         background-color: #8fe3cb;
         border-radius: 120px;
       }
+      @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+        .laptopImage {
+          height: 103%;
+          width: 152%;
+          right: 44%;
+          position: relative;
+          top: 45px;
+        }
+        /*TODO*/
+
+        .sectionOne {
+          position: absolute;
+          top: 39%;
+          left: 12%;
+          width: 20%;
+          height: 36%;
+        }
+        .sectionTwoWrapper {
+          position: absolute;
+          top: 44%;
+          left: 12%;
+          height: 27%;
+          width: 19%;
+        }
+        .sectionTwo {
+          transform: translate3d(0, 0, 0);
+          background: url(../assets/images/slider/onLaptop/BlueBoardWhite.png);
+          height: 100%;
+          width: 95%;
+          animation: slide 30s linear infinite;
+        }
+        .sectionThree {
+          position: absolute;
+          top: 50%;
+          left: 16%;
+          animation: popin 5s linear infinite;
+        }
+        .sectionFour {
+          position: absolute;
+          top: 76%;
+          left: 12%;
+          width: 20%;
+          height: 30%;
+        }
+        .sectionFive {
+          position: absolute;
+          top: 86%;
+          left: 16%;
+          animation: shake 10s linear infinite;
+        }
+
+        .sectionSix {
+          position: absolute;
+          top: 76%;
+          left: 35%;
+          // width: 35%;
+          // height: 33%;
+          width: 33%;
+        }
+        .sectionSeven {
+          position: absolute;
+          top: 80%;
+          left: 37%;
+          width: 12%;
+          animation: bottomTop 5s linear infinite;
+        }
+
+        .sectionEight {
+          position: absolute;
+          top: 39%;
+          left: 35%;
+          height: 33%;
+          width: 33%;
+        }
+        .sectionNine {
+          position: absolute;
+          top: 48%;
+          left: 37%;
+          animation: popin 5s linear infinite;
+        }
+
+        .slideOuterOne {
+          position: absolute;
+          top: 48%;
+          left: 48%;
+          width: 17%;
+        }
+        .slideInnerOne {
+          height: 15px;
+          width: 29%;
+          background-color: #8fe3cb;
+          border-radius: 120px;
+        }
+
+        .slideOuterTwo {
+          position: absolute;
+          top: 52.25%;
+          left: 48%;
+          width: 17%;
+        }
+        .slideInnerOneWrapper {
+          overflow: hidden;
+          position: absolute;
+          top: 48.19%;
+          left: 48%;
+          width: 17%;
+          border-radius: 120px;
+        }
+        .slideInnerTwoWrapper {
+          overflow: hidden;
+          position: absolute;
+          top: 52.5%;
+          left: 48%;
+          width: 17%;
+          border-radius: 120px;
+        }
+        .slideInnerTwo {
+          height: 15px;
+          width: 29%;
+          background-color: #8fe3cb;
+          border-radius: 120px;
+        }
+        /*TODO*/
+      }
+
+      //   @media only screen and (min-width: 1225px) and (max-width: 1300px) {
+
+      //     .laptopImage {
+      //       height: 103%;
+      //       width: 152%;
+      //       right: 310px;
+      //       position: relative;
+      //       top: 45px;
+      //     }
+      //     /*TODO*/
+
+      //     .sectionOne {
+      //       position: absolute;
+      //       top: 185px;
+      //       left: 75px;
+      //       width: 150px;
+      //     }
+      //     .sectionTwoWrapper {
+      //       position: absolute;
+      //       top: 209px;
+      //       left: 77px;
+      //       height: 130px;
+      //       width: 135px;
+      //     }
+      //     .sectionTwo {
+      //       transform: translate3d(0, 0, 0);
+      //       background: url(../assets/images/slider/onLaptop/BlueBoardWhite.png);
+      //       height: 135px;
+      //       width: 145px;
+      //       animation: slide 30s linear infinite;
+      //     }
+      //     .sectionThree {
+      //       position: absolute;
+      //       top: 235px;
+      //       left: 105px;
+      //       animation: popin 5s linear infinite;
+      //     }
+      //     .sectionFour {
+      //       position: absolute;
+      //       top: 360px;
+      //       left: 75px;
+      //       // height: 142px;
+      //       width: 150px;
+      //     }
+      //     .sectionFive {
+      //       position: absolute;
+      //       top: 415px;
+      //       left: 110px;
+      //       animation: shake 10s linear infinite;
+      //     }
+
+      //     .sectionSix {
+      //       position: absolute;
+      //       top: 360px;
+      //       left: 250px;
+      //       width: 240px;
+      //     }
+      //     .sectionSeven {
+      //       position: absolute;
+      //       top: 390px;
+      //       left: 273px;
+      //       width: 85px;
+      //       animation: bottomTop 5s linear infinite;
+      //     }
+
+      //     .sectionEight {
+      //       position: absolute;
+      //       top: 185px;
+      //       left: 250px;
+      //       height: 150px;
+      //       width: 240px;
+      //     }
+      //     .sectionNine {
+      //       position: absolute;
+      //       top: 225px;
+      //       left: 265px;
+      //       animation: popin 5s linear infinite;
+      //     }
+
+      //     .slideOuterOne {
+      //       position: absolute;
+      //       top: 225px;
+      //       left: 345px;
+      //       width: 17%;
+
+      //     }
+      //     .slideInnerOne {
+      //       height: 13px;
+      //       width: 29%;
+      //       background-color: #8fe3cb;
+      //       border-radius: 120px;
+      //     }
+
+      //     .slideOuterTwo {
+      //       position: absolute;
+      //       top: 250px;
+      //       left: 345px;
+      //       width: 17%;
+      //     }
+      //     .slideInnerOneWrapper {
+      //       overflow: hidden;
+      //       position: absolute;
+      //       top: 226px;
+      //       left: 345px;
+      //       width: 17%;
+      //       border-radius: 120px;
+      //     }
+      //     .slideInnerTwoWrapper {
+      //       overflow: hidden;
+      //       position: absolute;
+      //       top: 251px;
+      //       left: 345px;
+      //       width: 17%;
+      //       border-radius: 120px;
+      //     }
+      //     .slideInnerTwo {
+      //       height: 13px;
+      //       width: 29%;
+      //       background-color: #8fe3cb;
+      //       border-radius: 120px;
+      //     }
+      // }
     }
     .mapImage {
       width: 99%;
@@ -737,7 +984,7 @@ header {
     .getStarted {
       background: #8386e7;
       border-radius: 120.067px;
-      padding: 10px 36px;
+      padding: 10px 25px;
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
@@ -985,7 +1232,6 @@ header {
     }
     .choosePlan {
       margin-top: 40px;
-      margin-left: 70px;
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
@@ -993,6 +1239,7 @@ header {
       line-height: 26px;
       color: #8386e7;
       margin-bottom: 70px;
+      text-align: center;
     }
     .col-lg-3 {
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08) !important;
@@ -1031,9 +1278,10 @@ header {
         background: #8386e7;
         color: #ffffff;
         border-radius: 100px;
-        margin-right: 60px;
-        margin-left: 50px;
-        padding: 10px 0px 10px 30px;
+        margin-right: 50px;
+        margin-left: 40px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
       }
     }
   }
