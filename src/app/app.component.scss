@@ -5,13 +5,14 @@ header {
     padding-top: 40px;
   }
   .normalText {
+    padding-left:0px !important;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     color: #524f62;
-    text-align: right;
+    // text-align: right;
     padding-top: 9px;
     cursor: pointer;
 
@@ -760,10 +761,10 @@ header {
       transition: transform 1s;
       &:hover {
         transform: scale(1.05);
-        img {
-          animation: shake 0.5s;
-          animation-iteration-count: finite;
-        }
+        // img {
+        //   animation: shake 0.5s;
+        //   animation-iteration-count: finite;
+        // }
       }
     }
     .head {
@@ -1044,13 +1045,13 @@ header {
       overflow: hidden;
 
       max-width: 24% !important;
-
+      // transition: transform 1s;
       &:hover {
         transform: scale(1.05);
-        img {
-          animation: shake 0.5s;
-          animation-iteration-count: finite;
-        }
+        // img {
+        //   animation: shake 0.5s;
+        //   animation-iteration-count: finite;
+        // }
       }
     }
     .head {
@@ -1288,7 +1289,7 @@ header {
 }
 
 .processSection {
-  margin-top: 322px;
+  margin-top: 150px;
   margin-bottom: 115px;
   .heading {
     font-family: Roboto;
@@ -1323,13 +1324,13 @@ header {
 }
 
 .contactUsSection {
-  margin-top: 150px;
+  // margin-top: 150px;
   padding-top: 50px;
   .leftSection {
     border-right: 1px solid #eef2f8;
     padding-left: 80px;
     .mapClass {
-      margin-top: 29px;
+      // margin-top: 29px;
     }
     .heading {
       font-family: Roboto;

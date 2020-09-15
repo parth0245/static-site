@@ -3,12 +3,14 @@
     <div class="col-5">
       <img src="../assets/images/header/logo1.png" />
     </div>
+    <div class="col-2"></div>
     <div class="normalText col-1" (click)="scroll('home')">Home</div>
     <div class="normalText col-1" (click)="scroll('service')">Services</div>
     <div class="normalText col-1" (click)="scroll('clients')">Clients</div>
     <div class="normalText col-1" (click)="scroll('pricing')">Pricing</div>
-    <div class="normalText col-1" (click)="scroll('contact')">Contact</div>
-    <div class="gettingStarted col-2">Get Started</div>
+    <div class="normalText col-1" style="padding-right: 0px;flex: 0 0 7.333333%;" (click)="scroll('contact')">Contact</div>
+    
+    <!-- <div class="gettingStarted col-2">Get Started</div> -->
   </header>
   <section class="sliderSection">
     <ngx-slick-carousel
@@ -16,7 +18,7 @@
       #slickModal="slick-carousel"
       [config]="slideConfig"
     >
-      <div ngxSlickItem class="slide">
+      <!-- <div ngxSlickItem class="slide">
         <div class="row sliderContents">
           <div class="col-lg-5 col-md-5">
             <div class="heading">Translation Services</div>
@@ -119,7 +121,7 @@
             />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div ngxSlickItem class="slide">
         <div class="row sliderContents">
@@ -438,9 +440,9 @@
         </div>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <img class="leftImage" src="../assets/images/companies/leftImage.png" />
-    </div>
+    </div> -->
     <div class="col-lg-12"></div>
   </section>
   <section class="row translationServiceSection">
@@ -726,10 +728,10 @@
       </div>
 
       <div class="col-lg-12 emailContact">
-        Email
+        Email: <span class="emailAddressContact">projects@letstranslate.in</span>
       </div>
       <div class="col-lg-12 emailAddressContact">
-        projects@letstranslate.in
+        
       </div>
     </div>
     <div class="col-lg-6 rightSection">
@@ -747,7 +749,9 @@
               type="text"
               class="form-control"
               id="yourName"
+              name="name"
               placeholder="Your Name"
+              [(ngModel)]="name"
             />
           </div>
 
@@ -757,6 +761,8 @@
               class="form-control"
               id="email"
               placeholder="Email Address"
+              [(ngModel)]="email"
+              name="email"
             />
           </div>
 
@@ -767,10 +773,18 @@
               id="email"
               placeholder="Message..."
               rows="10"
+              [(ngModel)]="message"
+              name="mgs"
             ></textarea>
           </div>
-
-          <div class="submit">Submit</div>
+          <div
+            class="heading"
+            style="margin-left: 190px;"
+            *ngIf="showEmailSentMessage"
+          >
+            Email Sent
+          </div>
+          <div class="submit" (click)="sendEmail()">Submit</div>
         </form>
       </div>
     </div>

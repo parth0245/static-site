@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as firebase from 'firebase';
 declare var anime: any;
 @Component({
   selector: 'app-root',
@@ -6,23 +7,33 @@ declare var anime: any;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  firebaseConfig = {
+    apiKey: 'AIzaSyAU18PPx8Whb8h6aNFcPQdLdKDd5i3mZ2g',
+    authDomain: 'letstranslate-9e4fa.firebaseapp.com',
+    databaseURL: 'https://letstranslate-9e4fa.firebaseio.com',
+    projectId: 'letstranslate-9e4fa',
+    storageBucket: 'letstranslate-9e4fa.appspot.com',
+    messagingSenderId: '793318296992',
+    appId: '1:793318296992:web:749da35a585abbecd1a8c5'
+  };
+
   title = 'sugat-app';
+
+  name = '';
+  email = '';
+  message = '';
+  showEmailSentMessage = false;
 
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
     dots: false,
     prevArrow: false,
     nextArrow: false,
-    speed: 500,
+    autoplaySpeed: 5000,
+    speed: 1000,
     autoplay: false
-    // responsive: [
-    //   {
-    //     breakpoint: 1200,
-    //     settings: {}
-    //   }
-    // ]
   };
 
   manOne = {
@@ -132,8 +143,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.IncreaseIntervalForOne();
-    this.IncreaseIntervalForTwo();
+    firebase.initializeApp(this.firebaseConfig);
+
+    // this.IncreaseIntervalForOne();
+    // this.IncreaseIntervalForTwo();
 
     setTimeout(() => {
       this.typingCallbackForManOne(this, 'manOne');
@@ -207,5 +220,31 @@ export class AppComponent implements OnInit {
         }
       }, that[whichMan].speedBack);
     }
+  }
+
+  sendEmail() {
+    var sent = false;
+    window['Email']
+      .send({
+        Host: 'smtp.gmail.com',
+        Username: 'letstranslatelanguage@gmail.com',
+        Password: 'letstranslate@5502',
+        To: 'projects@letstranslate.in',
+        From: 'letstranslatelanguage@gmail.com',
+        Subject: `${this.name} wants to contact you`,
+        Body: `Email: ${this.email} Message: ${this.message}`
+      })
+      .then(function(message) {
+        sent = true;
+      });
+
+    this.showEmailSentMessage = true;
+    setTimeout(() => {
+      this.name='';
+      this.email='';
+      this.message='';
+
+      this.showEmailSentMessage = false;
+    }, 4000);
   }
 }
