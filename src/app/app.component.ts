@@ -223,7 +223,9 @@ export class AppComponent implements OnInit {
   }
 
   sendEmail() {
-    var sent = false;
+    this.showEmailSentMessage = true;
+    var that = this;
+
     window['Email']
       .send({
         Host: 'smtp.gmail.com',
@@ -235,16 +237,29 @@ export class AppComponent implements OnInit {
         Body: `Email: ${this.email} Message: ${this.message}`
       })
       .then(function(message) {
-        sent = true;
+        setTimeout(() => {
+          that.name = '';
+          that.email = '';
+          that.message = '';
+
+          that.showEmailSentMessage = false;
+        }, 4000);
       });
-
-    this.showEmailSentMessage = true;
-    setTimeout(() => {
-      this.name='';
-      this.email='';
-      this.message='';
-
-      this.showEmailSentMessage = false;
-    }, 4000);
   }
 }
+
+// Host: 'smtp.zoho.com',
+// Username: 'contact@letstranslate.in',
+// Password: 'Contact@123',
+// To: 'projects@letstranslate.in',
+// From: 'contact@letstranslate.in',
+// Subject: `${this.name} wants to contact you`,
+// Body: `Email: ${this.email} Message: ${this.message}`
+
+// Host: 'smtp.gmail.com',
+//         Username: 'letstranslatelanguage@gmail.com',
+//         Password: 'letstranslate@5502',
+//         To: 'projects@letstranslate.in',
+//         From: 'letstranslatelanguage@gmail.com',
+//         Subject: `${this.name} wants to contact you`,
+//         Body: `Email: ${this.email} Message: ${this.message}`
