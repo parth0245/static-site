@@ -5,7 +5,7 @@ header {
     padding-top: 40px;
   }
   .normalText {
-    padding-left:0px !important;
+    padding-left: 0px !important;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -1406,6 +1406,25 @@ header {
       width: 180px;
       margin: 40px 150px;
       cursor: pointer;
+    }
+    .thankyou {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 46px;
+      line-height: 60px;
+      color: #524f62;
+      margin-top: 48px;
+    }
+    .thankyouSub-heading {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 130.08%;
+      text-align: center;
+      color: #524f62;
+      margin-top: 42px;
     }
   }
   .emailContact {

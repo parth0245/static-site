@@ -241,9 +241,8 @@ export class AppComponent implements OnInit {
           that.name = '';
           that.email = '';
           that.message = '';
-
-          that.showEmailSentMessage = false;
-        }, 4000);
+        }, 2000);
+        console.log('Email Sent');
       });
   }
 }
